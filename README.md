@@ -4,9 +4,14 @@ This is the backend service
 
 ---
 
-## 🧩 Architecture Diagram
+## 🧩 Architecture Diagram from link 
 
-> _To be added
+![Architecture Diagram](https://svg.template.creately.com/ig6rd2jw1)
+
+---
+## 🧩 Architecture Diagram from files
+
+
 
 ---
 
