@@ -11,7 +11,7 @@ This is the backend service
 ---
 ## 🧩 Architecture Diagram from files
 
-
+![Architecture Diagram](./components-of-web-application-architechture.png)
 
 ---
 
