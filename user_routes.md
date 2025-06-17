@@ -41,10 +41,7 @@ Logs in an existing user.
 ### GET `/getUserDetails`
 Fetch logged-in user's details.
 
-**Headers**:
-```
-Authorization: Bearer <token>
-```
+
 
 ---
 
@@ -53,21 +50,21 @@ Authorization: Bearer <token>
 ### POST `/create-order`
 Creates a subscription order.
 
-**Headers**: Auth token required
+
 
 ---
 
 ### POST `/verify-order`
 Verifies a subscription order.
 
-**Headers**: Auth token required
+
 
 ---
 
 ### POST `/sendVerificationEmail`
 Sends email verification to the user.
 
-**Headers**: Auth token required
+
 
 ---
 
@@ -76,7 +73,7 @@ Sends email verification to the user.
 ### POST `/verifyOtp`
 Verifies the OTP code.
 
-**Headers**: Auth token required
+
 
 ---
 
@@ -85,14 +82,6 @@ Verifies CAPTCHA challenge.
 
 ---
 
-## 🧠 Misc Data Fetch
-
-### GET `/industry`
-Gets list of industries.
-
-**Headers**: Auth token required
-
----
 
 ## 🧾 Forms
 
@@ -116,7 +105,7 @@ Adds a newsletter subscriber.
 ### POST `/add-referral`
 Adds a referral for the current user.
 
-**Headers**: Auth token required
+
 
 ---
 
@@ -127,8 +116,8 @@ Verifies Google token for login.
 
 ---
 
-### POST `/unlinkgoogle`
-Unlinks Google from account.
+### POST `/linkgoogle`
+links Google from account.
 
 ---
 
@@ -138,7 +127,7 @@ Verifies Twitter token for login.
 ---
 
 ### POST `/unlinktwitter`
-Unlinks Twitter from account.
+links Twitter from account.
 
 ---
 
@@ -154,53 +143,3 @@ Updates password using reset token.
 
 ---
 
-### POST `/updated-token`
-Fetches a new JWT using refresh token.
-
----
-
-## 🧑‍💻 User Profile Management
-
-### GET `/basicinfo`
-Fetches basic profile info of user.
-
-**Headers**: Auth token required
-
----
-
-### POST `/update-basicinfo`
-Updates user basic info (name, DOB, etc.).
-
-**Headers**: Auth token required
-
----
-
-### POST `/update-accountinfo`
-Updates account-level details (email, phone, etc.).
-
-**Headers**: Auth token required
-
----
-
-### PATCH `/update`
-Generic update endpoint for user data.
-
-**Headers**: Auth token required
-
----
-
-### POST `/update-dashboard-settings`
-Updates user dashboard preferences/settings.
-
-**Headers**: Auth token required
-
----
-
-## 🔒 Auth Headers
-
-All protected endpoints require:
-```
-Authorization: Bearer <your_token_here>
-```
-
----
